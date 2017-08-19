@@ -23,7 +23,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("PrimeNumberGenerator++");
         primaryStage.setScene(new Scene(root));
-        primaryStage.getIcons().add(new Image("file:Resources/Soccer-Ball.png"));
+        primaryStage.getIcons().add(new Image("file:Resources/Abacus.png"));
         primaryStage.show();
     }
 

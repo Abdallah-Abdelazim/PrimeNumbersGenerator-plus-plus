@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class OutputWriter extends Thread {  // consumer thread
 
-    private Buffer buffer;
+    private final Buffer buffer;
     private static int outputWriterID;
     private FileWriter fWriter;
 

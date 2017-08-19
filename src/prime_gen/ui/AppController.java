@@ -41,7 +41,7 @@ public class AppController {
             alert.setContentText("Please Enter N.\nThe prime numbers will be calculated from 0 to N.");
             Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
             stage.getIcons().add(
-                    new Image("file:Resources/Soccer-Ball.png"));
+                    new Image("file:Resources/Abacus.png"));
             stage.initOwner(main.getPrimaryStage());
             alert.showAndWait();
             return;
@@ -85,7 +85,9 @@ public class AppController {
                 // both threads has finished
                 // time to show the results
                 try {
-                    fWriter.close();
+                    if (fWriter!=null){
+                        fWriter.close();
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -134,7 +136,7 @@ public class AppController {
         alert.setContentText("(c) Copyright 2017");
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
         stage.getIcons().add(
-                new Image("file:Resources/Soccer-Ball.png"));
+                new Image("file:Resources/Abacus.png"));
         stage.initOwner(main.getPrimaryStage());
         alert.showAndWait();
 
@@ -155,7 +157,7 @@ public class AppController {
         alert.setContentText(results);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
         stage.getIcons().add(
-                new Image("file:Resources/Soccer-Ball.png"));
+                new Image("file:Resources/Abacus.png"));
         stage.initOwner(main.getPrimaryStage());
 //        alert.showAndWait();
         alert.show(); // this is just a result dialog, no need to wait for user response
