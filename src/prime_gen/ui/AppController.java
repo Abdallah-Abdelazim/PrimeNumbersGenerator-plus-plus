@@ -100,12 +100,13 @@ public class AppController {
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        showResultsDialog("-  Number of prime numbers generated:  " + primeGen.getPrimeNumbersCount()
-                                + "\n-  Time taken:  " + (endTime - startTime) + "  milli seconds"
-                                + "\n-  Prime Numbers are saved to: " + new File(outputFileField.getText()).getAbsolutePath());
                         startButton.setDisable(false);
                         progressIndicator.setVisible(false);
                         waitMessageLabel.setVisible(false);
+
+                        showResultsDialog("-  Number of prime numbers generated:  " + primeGen.getPrimeNumbersCount()
+                                + "\n-  Time taken:  " + (endTime - startTime) + "  milli seconds"
+                                + "\n-  Prime Numbers are saved to: " + new File(outputFileField.getText()).getAbsolutePath());
                     }
                 });
 
@@ -159,7 +160,6 @@ public class AppController {
         stage.getIcons().add(
                 new Image("file:Resources/Abacus.png"));
         stage.initOwner(main.getPrimaryStage());
-//        alert.showAndWait();
-        alert.show(); // this is just a result dialog, no need to wait for user response
+        alert.showAndWait();
     }
 }
