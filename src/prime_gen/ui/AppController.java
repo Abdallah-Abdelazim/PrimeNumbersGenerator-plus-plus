@@ -41,7 +41,7 @@ public class AppController {
             alert.setContentText("Please Enter N.\nThe prime numbers will be calculated from 0 to N.");
             Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
             stage.getIcons().add(
-                    new Image("file:Resources/Abacus.png"));
+                    new Image("file:Resources/app_icon.png"));
             stage.initOwner(main.getPrimaryStage());
             alert.showAndWait();
             return;
@@ -137,7 +137,7 @@ public class AppController {
         alert.setContentText("(c) Copyright 2017");
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
         stage.getIcons().add(
-                new Image("file:Resources/Abacus.png"));
+                new Image("file:Resources/app_iconapp_icon.png"));
         stage.initOwner(main.getPrimaryStage());
         alert.showAndWait();
 
@@ -158,7 +158,7 @@ public class AppController {
         alert.setContentText(results);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
         stage.getIcons().add(
-                new Image("file:Resources/Abacus.png"));
+                new Image("file:Resources/app_icon.png"));
         stage.initOwner(main.getPrimaryStage());
         alert.showAndWait();
     }
